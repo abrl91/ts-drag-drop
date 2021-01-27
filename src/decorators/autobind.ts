@@ -1,5 +1,4 @@
-namespace App {
-    export function AutoBind(_: any, _2: string, descriptor: PropertyDescriptor) {
+   export function AutoBind(_: any, _2: string, descriptor: PropertyDescriptor) {
         const originalMethod = descriptor.value;
         const adjDescriptor: PropertyDescriptor = {
             configurable: true,
@@ -10,4 +9,3 @@ namespace App {
         }
         return adjDescriptor;
     }
-}
